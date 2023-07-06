@@ -8,14 +8,15 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "webpack-dev-server --mode development --open --hot",
-    "build": "react-scripts build"
+    "build": "webpack --mode production"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.22.5",
