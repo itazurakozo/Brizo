@@ -1,6 +1,9 @@
 html {
     background-color: #3d3d3d;
+    color: white;
 }
+
+
 
 body {
   margin: 0;
@@ -8,6 +11,10 @@ body {
   overflow-y: hidden;
   height: 100vh;
   width: 100vw;
+}
+
+.vanta-canvas {
+  z-index: -100 !important;
 }
 
 #root {
@@ -36,7 +43,11 @@ body {
   justify-content: space-around;
 }
 
-
+.demos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 
 .nav > ul {
   display: flex;
@@ -75,6 +86,10 @@ body {
     display: block !important;
   }
 
+  .demos {
+    display: block !important;
+  }
+
   .team-container {
     height: 100%;
     justify-content: unset !important;
@@ -96,12 +111,17 @@ body {
   justify-content: center;
   height: 70%;
 }
+.team-link {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 
 .demo-container {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  text-align: center;
+  flex-direction: column;
+  justify-content: center;
   height: 70%;
 }
 
